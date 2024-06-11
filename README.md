@@ -1,5 +1,9 @@
 # Shorts Links Copy Extension
 
+## Screenshot:
+
+![input_image](Screenshot.png)
+
 ## Overview
 Shorts Links Copy Extension is a Chrome extension designed to simplify the process of copying YouTube Shorts links. With a single click, you can copy the URL of the current YouTube Shorts video to your clipboard, making it easier to share with others.
 
