@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "AddLink Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+    "service_worker": "background.js"
+     },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["*://*.youtube.com/shorts/*"],
+          "js": ["popup.js"]
+        }
+    ]
+  }
