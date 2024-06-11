@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "AddLink Extension",
+    "name": "Shorts Links Copy Extension",
     "version": "1.0",
-    "description": "A simple Chrome extension.",
+    "description": "A Chrome extension which you can use when scroll throught and save some of the links of your shorts and later copy it.",
     "action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
