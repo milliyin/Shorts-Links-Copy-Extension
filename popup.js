@@ -1,5 +1,6 @@
 const btn = document.getElementById("savebtn");
 const copybtn = document.getElementById("copybtn");
+const clearbtn = document.getElementById("clearbtn");
 
 
 if(btn){
@@ -30,6 +31,20 @@ if(copybtn){
         console.log(error)
     }
 }
+if(clearbtn){
+    try {
+        clearbtn.addEventListener('click', () => {
+            console.log("in popup")
+            chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+                ClearLINKS();
+            });
+            
+        });
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
 var arr = [];
 function SaveLinktoarry(link){
     arr.push(link);
@@ -44,4 +59,8 @@ async function CopyLINKS(){
     }catch (error) {
         console.log(error)
     }
+}
+function ClearLINKS(){
+    arr = [];
+    console.log(arr);
 }
